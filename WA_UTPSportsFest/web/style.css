@@ -1,0 +1,191 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 24 oct 2023, 16:31:46
+    Author     : Juan Romero
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Lilita_One: 'Lilita One', sans-serif;
+}
+
+body {
+    max-height: 100vh;
+}
+
+.contenedorPrincipal {
+    background: url("img/background.webp");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 0;
+    position: relative;
+}
+
+.ContenedorBlur {
+    width: 80%;
+    height: 80%;
+    background: url("img/background.webp");
+    background-size: cover;
+    filter: blur(3px);
+    z-index: 0;
+    position: absolute;
+}
+
+.contenido {
+    width: 80%;
+    max-width: 1200px;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.panelIzquierdo {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    z-index: 2;
+}
+
+.panelIzquierdo .logoEslogan{
+    width: 100%;
+    margin-top: 10%;
+}
+
+.panelIzquierdo .logoEslogan .logo {
+    font-size: 72px;
+    font-family: var(--Lilita_One);
+}
+
+.panelIzquierdo .logoEslogan .eslogan {
+    font-size: 18px;
+    font-family: var(--Lilita_One);
+}
+
+.panelIzquierdo .redesSociales {
+    font-size: 36px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-bottom: 10%;
+}
+
+.panelIzquierdo .redesSociales a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.panelIzquierdo .redesSociales a i {
+    cursor: pointer;
+}
+
+.panelDerecho {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Utiliza una clase personalizada para el panel derecho */
+.panelDerecho p {
+    text-align: center;
+    font-family: var(--Lilita_One);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 36px;
+}
+
+/* Utiliza una clase personalizada para los labels */
+.panelDerecho .entradas label {
+    font-family: var(--Lilita_One);
+    text-transform: uppercase;
+}
+
+.panelDerecho .entradas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.panelDerecho .entradas {
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+/* Estilo para los campos de entrada con fondo de desenfoque */
+.panelDerecho .entradas input[type="text"],
+.panelDerecho .entradas input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    z-index: 4;
+    border: none; /* Elimina el borde predeterminado */
+    border-bottom: 1px solid #fff; /* Agrega una línea inferior blanca */
+    backdrop-filter: blur(5px); /* Aplica un efecto de desenfoque al fondo */
+    background: rgba(255, 255, 255, 0.1); /* Color de fondo con transparencia */
+    color: #000; /* Texto en color blanco */
+    outline: none; /* Elimina el borde de enfoque */
+    transition: border-bottom 0.3s; /* Transición para la línea inferior */
+    border-radius: 15px;
+    padding: 15px;
+    font-family: var(--Lilita_One);
+    font-size: 18px;
+}
+
+/* Efecto de la línea blanca al enfocar el campo */
+.panelDerecho .entradas input[type="text"]:focus,
+.panelDerecho .entradas input[type="password"]:focus {
+    border-bottom: 2px solid #fff; /* Aumenta el grosor de la línea al enfocar */
+}
+
+
+/* Utiliza una clase personalizada para el botón de submit */
+.panelDerecho input[type="submit"] {
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 0;
+    color: #fff;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(342deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    font-family: var(--Lilita_One);
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*Invitado y olvide contraseña*/
+
+.panelDerecho .entradas .invitadoRecuperar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.panelDerecho .entradas .invitadoRecuperar a{
+    color: #fff;
+    text-decoration: none;
+}
