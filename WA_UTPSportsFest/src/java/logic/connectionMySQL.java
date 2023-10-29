@@ -12,10 +12,10 @@ import java.sql.SQLException;
  *
  * @author Juan Romero
  */
-public class connectionMySQL {
+public class ConnectionMySQL {
     Connection connection;
 
-    public connectionMySQL() {
+    public ConnectionMySQL() {
         // ruta
         String host = "localhost";
         String port = "3306";

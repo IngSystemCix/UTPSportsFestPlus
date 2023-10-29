@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/CarpetaUniversidadUTP/WA_UTPSportsFest/web/index.jsp</file>
-            <file>file:/D:/CarpetaUniversidadUTP/WA_UTPSportsFest/src/java/logic/connectionMySQL.java</file>
-            <file>file:/D:/CarpetaUniversidadUTP/WA_UTPSportsFest/web/img/dashboard.jsp</file>
-            <file>file:/D:/CarpetaUniversidadUTP/WA_UTPSportsFest/web/style.css</file>
+            <file>file:/D:/CarpetaUniversidadUTP/UTPSportsFest/WA_UTPSportsFest/src/java/logic/Settings.java</file>
+            <file>file:/D:/CarpetaUniversidadUTP/UTPSportsFest/WA_UTPSportsFest/web/index.jsp</file>
+            <file>file:/D:/CarpetaUniversidadUTP/UTPSportsFest/WA_UTPSportsFest/web/dashboard.jsp</file>
+            <file>file:/D:/CarpetaUniversidadUTP/UTPSportsFest/WA_UTPSportsFest/src/java/logic/ConnectionMySQL.java</file>
+            <file>file:/D:/CarpetaUniversidadUTP/UTPSportsFest/WA_UTPSportsFest/web/style.css</file>
         </group>
     </open-files>
 </project-private>

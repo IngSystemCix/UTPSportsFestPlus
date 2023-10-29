@@ -189,3 +189,49 @@ body {
     color: #fff;
     text-decoration: none;
 }
+
+/* Estilos para el contenedor del popup */
+.contenedorPopup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Estilos para la tarjeta (card) del popup */
+.card {
+    background: #fff;
+    width: 25%;
+    height: 30%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para la imagen verificada */
+.imagen-verificada {
+    width: 128px;
+    height: 128px;
+}
+
+/* Estilos para el párrafo de texto */
+.card p {
+    text-align: justify;
+    color: #000;
+}
+
+/* Estilos para el botón Aceptar */
+.boton-aceptar {
+    border: 0;
+    background: green;
+    font-weight: 900;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
