@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Lilita_One: 'Lilita One', sans-serif;
+}
+
+body {
+    max-height: 100vh;
+}
+
+/*Popup para insertar enfrentamientos*/
+
+.contenedor-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Color oscuro con transparencia */
+    backdrop-filter: blur(5px); /* Aplica un filtro de desenfoque al fondo */
+    z-index: 100; /* Por encima de todo el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    padding: 20px; /* Espaciado interior dentro de la tarjeta */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background: #fff;
+    font-family: var(--Lilita_One);
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.card .encabezado {
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card .encabezado .fa-solid {
+    cursor: pointer;
+}
+
+.card .encabezado .fa-solid:hover {
+    color: #0174BE;
+}
+
+/* Estilo para las etiquetas y campos de entrada */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input[type="datetime-local"] {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Estilo para el botón de guardar */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
